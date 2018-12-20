@@ -165,6 +165,7 @@
         node.value = node.next.value;
         node.next = node.next.next;
     } else {
+        //tail node
         BBSingleLinkedNode *aheadNode = [self nodeBeforeNode:node];
         aheadNode.next = nil;
     }
